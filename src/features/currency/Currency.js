@@ -8,7 +8,7 @@ const Currency = () => {
   const rates = useSelector(selectRates);
 
   return (
-    <select name="rates" id="rates">
+    <select name="rates" id="rates" aria-label="Currency A">
       {rates.map((rate) => (
         <option key={rate.currency} value={rate.currency}>
           {rate.currency}
